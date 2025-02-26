@@ -17,7 +17,7 @@ GitHub Pages : Hébergement du site
 📍 Carte interactive pour localiser facilement le café
 
 🌍 Déploiement
-Le site est hébergé sur GitHub Pages et accessible via Lien du site.
+Le site est hébergé sur vercel et accessible via Lien: https://le-grand-cafe-du-theatre.vercel.app/.
 
 💡 Comment contribuer ?
 Si vous souhaitez contribuer au projet :
