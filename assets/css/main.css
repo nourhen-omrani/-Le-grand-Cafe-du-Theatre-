@@ -288,7 +288,7 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
-.img-fluid{
+#img-fluid{
 
 width: 160px;
 height: 160px;
@@ -1568,14 +1568,16 @@ height: 300px;
   }
 
   .gallery .swiper-slide-active {
-    background: var(--background-color);
-    border: 3px solid var(--accent-color);
-    padding: 1px;
+    /* background: var(--background-color); */
+    /* border: 3px solid var(--accent-color); */
+    padding: 20px;
     z-index: 1;
     transform: scale(1.2);
     transition: none;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Contact Section
