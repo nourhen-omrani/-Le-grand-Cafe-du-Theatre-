@@ -63,31 +63,34 @@
   </header>
 
   <main class="main">
-
-   <!-- Hero Section -->
+<!-- Hero Section -->
 <section id="hero" class="hero section light-background">
-  <div class="container">
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="assets/videos/ramadan-video.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+  </div>
+  
+  <!-- <div class="container position-relative z-index-1">
     <div class="row gy-4 justify-content-center justify-content-lg-between">
-      <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+      <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center text-white">
         <h1 data-aos="fade-up">Le lieu idéal pour se détendre</h1>
         <p data-aos="fade-up" data-aos-delay="100">
           En plein centre-ville, profitez d'un espace non-fumeur ou détendez-vous sur l'une de nos terrasses. 
           Découvrez une carte variée qui satisfera toutes vos envies.
         </p>
         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-         
           <a href="assets/videos/video-ramadan-gc.mp4" class="glightbox btn-watch-video d-flex align-items-center">
             <i class="bi bi-play-circle"></i><span>Voir la vidéo</span>
           </a>
         </div>
       </div>
-      <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Café terrasse">
-      </div>
     </div>
-  </div>
+  </div> -->
 </section>
 <!-- /Hero Section -->
+
 
 
   <!-- About Section -->
@@ -156,11 +159,6 @@
     </div>
   </div>
 </section>
-
-
-
-
-
 <script>
 document.getElementById('flip-page').addEventListener('click', function() {
     let images = document.querySelectorAll('.catalogue-pages img');
@@ -173,8 +171,6 @@ document.getElementById('flip-page').addEventListener('click', function() {
         images[0].classList.add('active');
     }
 });
-
-
 </script>
 
   
