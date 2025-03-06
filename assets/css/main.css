@@ -927,35 +927,55 @@ section,
   color: white; /* Texte en blanc pour contraste */
   overflow: hidden;
 }
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-}
-
 .video-background video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Couvre toute la section */
+  object-fit: contain; /* Au lieu de cover pour éviter les coupures */
   position: absolute;
   top: 0;
   left: 0;
+  background-color: black; /* Ajoute un fond noir si la vidéo n'occupe pas tout l'écran */
 }
 
-.container {
-  position: relative;
-  z-index: 1; /* Pour placer le texte devant la vidéo */
+/* Pour les écrans de tablette */
+@media (max-width: 1024px) {
+  .video-background video {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 }
 
-/* Amélioration lisibilité */
-#hero h1, #hero p {
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+/* Pour les écrans mobiles */
+@media (max-width: 640px) {
+  .video-background video {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 12 / 16; /* Vidéo en mode portrait */
+  }
+
+  .hero {
+    min-height: 50vh; /* Ajustement de la hauteur sur mobile */
+  }
 }
+
+.video-mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .video-desktop {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # About Section
